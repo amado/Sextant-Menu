@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.jqSextantMenu .breadcrumbShow { display: block; }
+.jqSextantMenu .breadcrumbHide { display: none; }
+.jqSextantMenu .here a { background-color: #ff66ff; }
+.jqSextantMenu .here ul a { background-color: transparent; }
