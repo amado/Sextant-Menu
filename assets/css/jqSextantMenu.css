@@ -1,7 +1,122 @@
 @charset "utf-8";
 /* CSS Document */
 
-.jqSextantMenu .breadcrumbShow { display: block; }
-.jqSextantMenu .breadcrumbHide { display: none; }
-.jqSextantMenu .here a { background-color: #ff66ff; }
-.jqSextantMenu .here ul a { background-color: transparent; }
+/* ======================================== */
+/* the part that's important to the plug-in */
+/* ======================================== */
+#post-processed .jqSextantMenu ul {
+	display: none;
+}
+#post-processed .jqSextantMenu .breadcrumbShow {
+	display: block;
+}
+#post-processed .jqSextantMenu .here a {
+	background-color: #ff66ff;
+}
+#post-processed .jqSextantMenu .here ul a {
+	background-color: transparent;
+}
+/* ============================================== */
+/* other stuff to make the page look nice for now */
+/* ============================================== */
+body, button, input, select, textarea {
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+}
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color:#222222;
+}
+#container {
+	width: 930px;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+#header {
+	margin: 0px;
+	padding: 15px 30px;
+	border-bottom: 3px solid #444444;
+}
+#content01 {
+	width: 570px;
+	padding: 0px 30px;
+}
+#content01 p {
+	font-size: 15px;
+	line-height: 21px;
+}
+#post-processed {
+	background-color: #000000;
+	position: absolute;
+	left: 630px;
+	width: 270px;
+}
+#pre-processed {
+	background-color: #000000;
+	width: 270px;
+}
+#footer {
+	margin: 0px;
+	padding: 15px 30px;
+	border-top: 3px solid #444444;
+}
+.clearer {
+	height: 0;
+	clear: both;
+	background: transparent none;
+}
+.clearer span {
+	display: none;
+}
+/* ================================================= */
+/* styling stuff to make the menus look nice for now */
+/* ================================================= */
+ul.jqSextantMenu, ul.jqSextantMenu ul {
+	padding: 0px;
+	list-style-type: none;
+}
+.jqSextantMenu li {
+	margin: 5px 15px;
+	font-size: 15px;
+}
+.jqSextantMenu li li {
+	font-size: 13px;
+}
+.jqSextantMenu li li li {
+	font-size: 12px;
+}
+.jqSextantMenu li li li li {
+	font-size: 11px;
+}
+.jqSextantMenu li li li li li {
+	font-size: 10px;
+}
+.jqSextantMenu li li li li li li {
+	font-size: 9px;
+}
+.jqSextantMenu ul {
+	background-color: #221144;
+}
+.jqSextantMenu ul ul {
+	background-color: #443366;
+}
+.jqSextantMenu ul ul ul {
+	background-color: #665588;
+}
+.jqSextantMenu ul ul ul ul {
+	background-color: #8877aa;
+}
+.jqSextantMenu ul ul ul ul ul {
+	background-color: #aa99cc;
+}
+.jqSextantMenu a {
+	color: #ddeeff;
+	text-decoration: none;
+}
+.jqSextantMenu a:hover {
+	color: #ddeeff;
+	text-decoration: underline;
+}
