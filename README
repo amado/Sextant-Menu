@@ -1,0 +1,15 @@
+I'd like to code this jQuery plugin that I've named jqSextantMenu. It's a small function, and should be a light plugin:
+
+The idea is to process a nicely semantic nested list (UL or OL) of a website's sections, sub-sections, pages, and sub-pages with just one of the LIs - the one corresponding to the page the visitor is presently on - marked with a class="here" (presumed to be written dynamically on the server-side). With proper styling, it should be possible to create a user interface out of this that serves as an all-in-one Main Menu, Breadcrumb Trail (of a sort), and Sub-Menu.
+
+I ran into a challenge doing this in straight CSS because of an inability to select parent elements of a given element. It may be possible to write enough lines of CSS to actually cover all the possibilities of ULs, LIs, and LI.heres, but if so it's quite too cumbersome and would lead to CSS code bloat. A DOM re-write in jQuery would be a far easier way.
+
+So what we're looking is for any parent/grandparent/great-grandparent ULs/OLs of the LI.here, plus the first child UL if one exists, to be assigned a class (such as "breadcrumbShow") so that they can be styled differently than ULs/OLs in unrelated branches of the family tree. It may be necessary (or merely convenient) to assign a class (such as "breadcrumbHide") to these other, unrelated ULs/OLs.
+
+That's the base function. Here's the one feature that I've let creep in: options for hover actions.
+
+Unless the function is passed a variable for no hover actions, it would be good for this plugin to write the class="breadcrumbShow" to the first child UL/OL of a hovered-over LI, and to put it back to whatever it was before on un-hover.
+
+And the developer may wish for the currently-expanded branch to collapse while other branches are being hovered over (perhaps in the case of a horizontal menu). So, it would be good if, when the function is passed a variable for collapsing the "here" branch while anything else in the list is being hovered-over, it removed the class="breadcrumbShow" (or wrote class="breadcrumbHide") from the relatives of the LI.here. And on un-hover to put it back to whatever it was before.
+
+That's the function. We're not looking for animations, nor hoverintents, nor other fancy stuff in this plugin; there's other plugins for that, and I would hope that this one would be inter-operable with those. I can take care of CSS and HTML, but I'd have to learn my jQuery to turn the pseudo-code logic expressed in this js file's comments into stuff that actually performs the desired operations. Your help, in any capacity but there in particular, is much appreciated.
